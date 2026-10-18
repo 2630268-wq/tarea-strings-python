@@ -19,9 +19,9 @@
 # Outputs: Formatted name and initials.
 # Validations: Reject empty input and names with fewer than two words.
 # Test cases:
-# 1) Normal: "  juan   carlos tovar " -> "Juan Carlos Tovar", "J.C.T."
-# 2) Border: "ana lopez" -> "Ana Lopez", "A.L."
-# 3) Error: "   " -> Error: invalid input
+# 1) Normal: "  juan   carlos tovar " "Juan Carlos Tovar", "J.C.T."
+# 2) Border: "ana lopez" "Ana Lopez", "A.L."
+# 3) Error: "   "  Error: invalid input
 
 def problem_1():
     full_name = input("Enter your full name: ").strip()
@@ -85,9 +85,9 @@ def problem_2():
 # Outputs: Is palindrome: true/false and the normalized phrase.
 # Validations: Reject empty input and normalized phrases shorter than 3 characters.
 # Test cases:
-# 1) Normal: "Anita lava la tina" -> true
-# 2) Border: "aba" -> true
-# 3) Error: " a " -> Error: phrase is too short
+# 1) Normal: "Anita lava la tina" true
+# 2) Border: "aba"  true
+# 3) Error: " a "  Error: phrase is too short
 
 def problem_3():
     phrase = input("Enter a phrase: ").strip()
@@ -114,8 +114,8 @@ def problem_3():
 # Validations: Reject empty input and input that produces no words.
 # Test cases:
 # 1) Normal: "Python makes coding fun" -> 4 words; shortest "fun"; longest "Python"
-# 2) Border: "Hello" -> 1 word; first and last are "Hello"
-# 3) Error: "   " -> Error: invalid input
+# 2) Border: "Hello" 1 word; first and last are "Hello"
+# 3) Error: "   "  Error: invalid input
 
 def problem_4():
     sentence = input("Enter a sentence: ").strip()
@@ -148,9 +148,9 @@ def problem_4():
 # Outputs: Password strength: weak/medium/strong.
 # Validations: Reject an empty password; check its length before classification.
 # Test cases:
-# 1) Normal: "Robo2026!" -> strong
-# 2) Border: "Password" -> medium
-# 3) Error: "" -> Error: invalid input
+# 1) Normal: "Robo2026!" strong
+# 2) Border: "Password" medium
+# 3) Error: "" Error: invalid input
 
 def problem_5():
     password_input = input("Enter a password to classify: ")
@@ -181,9 +181,9 @@ def problem_5():
 # Outputs: Label containing exactly 30 characters, displayed between quotes.
 # Validations: Reject an empty product name and a nonnumeric or nonpositive price.
 # Test cases:
-# 1) Normal: product "Notebook", price "25.50" -> 30-character label
-# 2) Border: product "P", price "0.01" -> 30-character label
-# 3) Error: product "Pen", price "-2" -> Error: price must be positive
+# 1) Normal: product "Notebook", price "25.50" 30-character label
+# 2) Border: product "P", price "0.01" 30-character label
+# 3) Error: product "Pen", price "-2" Error: price must be positive
 
 def problem_6():
     product_name = input("Enter product name: ").strip()
